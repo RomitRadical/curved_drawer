@@ -30,7 +30,7 @@ class DrawerNavItem extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: this.label.isNotEmpty
               ? <Widget>[
-                  Icon(this.icon.icon, size: this.size, color: this.color),
+                  this.icon,
                   SizedBox(width: 5),
                   Text(
                     label,
@@ -38,7 +38,7 @@ class DrawerNavItem extends StatelessWidget {
                   ),
                 ]
               : <Widget>[
-                  Icon(this.icon.icon, size: this.size, color: this.color),
+                  this.icon,
                 ],
         ),
       ),
